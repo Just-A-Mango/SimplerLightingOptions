@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "simplerlightingoptions",
+  "version": "${version}",
+
+  "name": "Simpler Lighting Options",
+  "description": "This mod is complementary to LambDynamicLights. It adds a single and simple option in the Video Settings which allows you to choose from 3 settings: off, fast, and fancy.",
+  "authors": [
+    "Just_a_Mango"
+  ],
+  "contact": {
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/simplerlightingoptions/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "com.mango.simplerlightingoptions.SimplerLightingOptions"
+    ]
+  },
+  "mixins": [
+    "simplerlightingoptions.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16",
+    "lambdynlights": ">=2.0.2+1.17"
+  },
+  "custom": {
+    "modmenu": {
+      "badges": [],
+      "parent": {
+        "id": "simplerlightingoptions",
+        "name": "Simpler Lighting Options",
+        "description": "This mod is complementary to LambDynamicLights. It adds a single and simple option in the Video Settings which allows you to choose from 3 settings: off, fast, and fancy.",
+        "icon": "assets/simplerlightingoptions/icon.png",
+        "badges": []
+      }
+    }
+  }
+}
