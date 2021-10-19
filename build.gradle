@@ -30,6 +30,7 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 	modImplementation "dev.lambdaurora:spruceui:${project.spruceui_version}"
 	include "dev.lambdaurora:spruceui:${project.spruceui_version}"
+	modImplementation "dev.lambdaurora:lambdabettergrass:${project.lambdabettergrass_version}"
 
 	// PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
 	// You may need to force-disable transitiveness on them.
@@ -84,6 +85,8 @@ publishing {
 	// See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
 	repositories {
 		maven {
+			mavenLocal()
+			mavenCentral()
 			name 'Gegy'
 			url 'https://maven.gegy.dev'
 		}

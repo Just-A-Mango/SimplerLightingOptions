@@ -18,11 +18,11 @@ import org.spongepowered.asm.mixin.injection.ModifyArg;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(VideoOptionsScreen.class)
-public class VideoOptionsScreenMixin extends GameOptionsScreen {
+public class VideoOptionsScreenMixinDynamicLights extends GameOptionsScreen {
 	@Unique
 	private Option dynamiclights$option;
 
-	public VideoOptionsScreenMixin(Screen parent, GameOptions gameOptions, Text title) {
+	public VideoOptionsScreenMixinDynamicLights(Screen parent, GameOptions gameOptions, Text title) {
 		super(parent, gameOptions, title);
 	}
 

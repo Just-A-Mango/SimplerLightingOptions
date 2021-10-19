@@ -1,5 +1,9 @@
 {
   "simplerlightingoptions.dynamiclights.off": "Dynamic Lights: Off",
   "simplerlightingoptions.dynamiclights.fast": "Dynamic Lights: Fast",
-  "simplerlightingoptions.dynamiclights.fancy": "Dynamic Lights: Fancy"
+  "simplerlightingoptions.dynamiclights.fancy": "Dynamic Lights: Fancy",
+  "simplerlightingoptions.bettergrass.off": "Better Grass: Off",
+  "simplerlightingoptions.bettergrass.fast": "Better Grass: Fast",
+  "simplerlightingoptions.bettergrass.fancy": "Better Grass: Fancy"
+
 }
