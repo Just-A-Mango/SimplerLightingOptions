@@ -5,7 +5,7 @@
 ![Environment: Client](https://img.shields.io/badge/environment-client-1976d2?style=flat-square)
 ![Mod loader: Fabric](https://img.shields.io/badge/modloader-fabric-blue?style=flat-square)
 
-This mod is complementary to LambDynamicLights. It adds a single and simple option in the Video Settings which allows you to choose from 3 settings: off, fast, and fancy.
+This mod is complementary to other mods. It simplifies complex mod settings to make them as Vanilla-like as possible. 
 
 ## Usage
 
