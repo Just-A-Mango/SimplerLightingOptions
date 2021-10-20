@@ -5,10 +5,9 @@
   "compatibilityLevel": "JAVA_16",
   "mixins": [
     "DynamicLightsMixin",
-    "VideoOptionsScreenMixinBetterGrass"
-  ],
-  "client": [
-    "VideoOptionsScreenMixinDynamicLights"
+    "VideoOptionsScreenMixinBetterGrass",
+    "VideoOptionsScreenMixinDynamicLights",
+    "VideoOptionsScreenRemoveLDLLBG"
   ],
   "injectors": {
     "defaultRequire": 1
