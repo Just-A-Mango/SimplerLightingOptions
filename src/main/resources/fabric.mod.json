@@ -39,7 +39,7 @@
         "id": "simpleroptions",
         "name": "Simpler Options",
         "description": "This mod is complementary to LambDynamicLights. It adds a single and simple option in the Video Settings which allows you to choose from 3 settings: off, fast, and fancy.",
-        "icon": "assets/simplerlightingoptions/icon.png",
+        "icon": "assets/simpleroptions/icon.png",
         "badges": []
       }
     }
