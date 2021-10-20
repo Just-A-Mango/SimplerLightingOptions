@@ -4,12 +4,12 @@
   "version": "${version}",
 
   "name": "Simpler Options",
-  "description": "This mod is complementary to LambDynamicLights. It adds a single and simple option in the Video Settings which allows you to choose from 3 settings: off, fast, and fancy.",
+  "description": "This mod is complementary to other mods. It simplifies complex mod settings to make them as Vanilla-like as possible.",
   "authors": [
     "Just_a_Mango"
   ],
   "contact": {
-    "sources": "https://github.com/Just-A-Mango/SimplerLightingOptions"
+    "sources": "https://github.com/Just-A-Mango/SimplerOptions"
   },
 
   "license": "MIT",
@@ -38,7 +38,7 @@
       "parent": {
         "id": "simpleroptions",
         "name": "Simpler Options",
-        "description": "This mod is complementary to LambDynamicLights. It adds a single and simple option in the Video Settings which allows you to choose from 3 settings: off, fast, and fancy.",
+        "description": "This mod is complementary to other mods. It simplifies complex mod settings to make them as Vanilla-like as possible. ",
         "icon": "assets/simpleroptions/icon.png",
         "badges": []
       }
