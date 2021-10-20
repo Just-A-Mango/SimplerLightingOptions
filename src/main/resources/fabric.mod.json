@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "id": "simplerlightingoptions",
+  "id": "simpleroptions",
   "version": "${version}",
 
-  "name": "Simpler Lighting Options",
+  "name": "Simpler Options",
   "description": "This mod is complementary to LambDynamicLights. It adds a single and simple option in the Video Settings which allows you to choose from 3 settings: off, fast, and fancy.",
   "authors": [
     "Just_a_Mango"
@@ -13,16 +13,16 @@
   },
 
   "license": "MIT",
-  "icon": "assets/simplerlightingoptions/icon.png",
+  "icon": "assets/simpleroptions/icon.png",
 
   "environment": "client",
   "entrypoints": {
     "main": [
-      "com.mango.simplerlightingoptions.SimplerLightingOptions"
+      "com.mango.simpleroptions.SimplerOptions"
     ]
   },
   "mixins": [
-    "simplerlightingoptions.mixins.json"
+    "simpleroptions.mixins.json"
   ],
 
   "depends": {
@@ -36,8 +36,8 @@
     "modmenu": {
       "badges": [],
       "parent": {
-        "id": "simplerlightingoptions",
-        "name": "Simpler Lighting Options",
+        "id": "simpleroptions",
+        "name": "Simpler Options",
         "description": "This mod is complementary to LambDynamicLights. It adds a single and simple option in the Video Settings which allows you to choose from 3 settings: off, fast, and fancy.",
         "icon": "assets/simplerlightingoptions/icon.png",
         "badges": []

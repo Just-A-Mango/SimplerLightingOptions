@@ -1,6 +1,6 @@
-package com.mango.simplerlightingoptions.mixin;
+package com.mango.simpleroptions.mixin;
 
-import com.mango.simplerlightingoptions.DynamicLightsOption;
+import com.mango.simpleroptions.DynamicLightsOption;
 import dev.lambdaurora.lambdynlights.LambDynLights;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.option.GameOptionsScreen;
@@ -8,11 +8,9 @@ import net.minecraft.client.gui.screen.option.VideoOptionsScreen;
 import net.minecraft.client.option.GameOptions;
 import net.minecraft.client.option.Option;
 import net.minecraft.text.Text;
-import org.spongepowered.asm.mixin.*;
+import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(VideoOptionsScreen.class)
 public class VideoOptionsScreenRemoveLDLLBG extends GameOptionsScreen {
@@ -35,9 +33,6 @@ public class VideoOptionsScreenRemoveLDLLBG extends GameOptionsScreen {
         options[options.length - 1] = new DynamicLightsOption(LambDynLights.get().config, this);
         return options;
     }
-
-
-
 
 
 }

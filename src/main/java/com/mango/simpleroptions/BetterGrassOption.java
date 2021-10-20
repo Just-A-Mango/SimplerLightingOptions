@@ -1,4 +1,4 @@
-package com.mango.simplerlightingoptions;
+package com.mango.simpleroptions;
 
 import dev.lambdaurora.lambdabettergrass.LBGConfig;
 import dev.lambdaurora.lambdabettergrass.LBGMode;
@@ -14,11 +14,10 @@ import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Formatting;
 
 public class BetterGrassOption extends Option {
-    private final LBGConfig config;
     private static final String KEY = null;
-    private Text text;
-
+    private final LBGConfig config;
     private final Screen parent;
+    private Text text;
     private int graphid;
 
 
@@ -29,21 +28,18 @@ public class BetterGrassOption extends Option {
         this.parent = parent;
         this.graphid = 1;
         this.config.load();
-        if(this.config.getMode() == LBGMode.FANCY) {
+        if (this.config.getMode() == LBGMode.FANCY) {
             this.graphid = 2;
             this.text = new TranslatableText("simplerlightingoptions.bettergrass.fancy").formatted(Formatting.ITALIC);
 
-        }
-        else if(this.config.getMode() == LBGMode.FAST) {
+        } else if (this.config.getMode() == LBGMode.FAST) {
             this.graphid = 1;
             this.text = new TranslatableText("simplerlightingoptions.bettergrass.fast");
-        }
-        else if(this.config.getMode() == LBGMode.OFF) {
+        } else if (this.config.getMode() == LBGMode.OFF) {
             this.graphid = 0;
             this.text = new TranslatableText("simplerlightingoptions.bettergrass.off");
         }
     }
-
 
 
     public void RefreshButton() {
@@ -54,8 +50,7 @@ public class BetterGrassOption extends Option {
             this.text = new TranslatableText("simplerlightingoptions.bettergrass.off");
             MinecraftClient.getInstance().reloadResources();
 //            MinecraftClient.getInstance().setScreen(new SettingsScreen(this.parent));
-        }
-        else {
+        } else {
             graphid++;
             if (graphid == 1) {
                 this.config.setMode(LBGMode.FASTEST);
@@ -64,8 +59,7 @@ public class BetterGrassOption extends Option {
                 MinecraftClient.getInstance().reloadResources();
 //                MinecraftClient.getInstance().setScreen(new SettingsScreen(this.parent));
 
-            }
-            else if (graphid == 2) {
+            } else if (graphid == 2) {
                 this.config.setMode(LBGMode.FANCY);
                 this.config.setBetterLayer(true);
                 this.text = new TranslatableText("simplerlightingoptions.bettergrass.fancy").formatted(Formatting.ITALIC);

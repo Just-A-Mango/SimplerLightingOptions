@@ -1,4 +1,4 @@
-package com.mango.simplerlightingoptions;
+package com.mango.simpleroptions;
 
 import dev.lambdaurora.lambdynlights.DynamicLightsConfig;
 import dev.lambdaurora.lambdynlights.DynamicLightsMode;
@@ -15,11 +15,10 @@ import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Formatting;
 
 public class DynamicLightsOption extends Option {
-    private final DynamicLightsConfig config;
     private static final String KEY = null;
-    private Text text;
-
+    private final DynamicLightsConfig config;
     private final Screen parent;
+    private Text text;
     private int graphid;
 
 
@@ -30,21 +29,18 @@ public class DynamicLightsOption extends Option {
         this.parent = parent;
         this.graphid = 1;
         this.config.load();
-        if(this.config.getDynamicLightsMode() == DynamicLightsMode.FANCY) {
+        if (this.config.getDynamicLightsMode() == DynamicLightsMode.FANCY) {
             this.graphid = 2;
             this.text = new TranslatableText("simplerlightingoptions.dynamiclights.fancy").formatted(Formatting.ITALIC);
 
-        }
-        else if(this.config.getDynamicLightsMode() == DynamicLightsMode.FAST) {
+        } else if (this.config.getDynamicLightsMode() == DynamicLightsMode.FAST) {
             this.graphid = 1;
             this.text = new TranslatableText("simplerlightingoptions.dynamiclights.fast");
-        }
-        else if(this.config.getDynamicLightsMode() == DynamicLightsMode.OFF) {
+        } else if (this.config.getDynamicLightsMode() == DynamicLightsMode.OFF) {
             this.graphid = 0;
             this.text = new TranslatableText("simplerlightingoptions.dynamiclights.off");
         }
     }
-
 
 
     public void RefreshButton() {
@@ -60,8 +56,7 @@ public class DynamicLightsOption extends Option {
             this.text = new TranslatableText("simplerlightingoptions.dynamiclights.off");
             MinecraftClient.getInstance().reloadResources();
 //            MinecraftClient.getInstance().setScreen(new SettingsScreen(this.parent));
-        }
-        else {
+        } else {
             graphid++;
             if (graphid == 1) {
                 this.config.setDynamicLightsMode(DynamicLightsMode.FAST);
@@ -75,8 +70,7 @@ public class DynamicLightsOption extends Option {
                 MinecraftClient.getInstance().reloadResources();
 //                MinecraftClient.getInstance().setScreen(new SettingsScreen(this.parent));
 
-            }
-            else if (graphid == 2) {
+            } else if (graphid == 2) {
                 this.config.setDynamicLightsMode(DynamicLightsMode.FANCY);
                 this.config.setCreeperLightingMode(ExplosiveLightingMode.FANCY);
                 this.config.setTntLightingMode(ExplosiveLightingMode.FANCY);
