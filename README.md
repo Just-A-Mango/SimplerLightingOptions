@@ -1,4 +1,4 @@
-# Simpler Lighting Options
+# Simpler Options
 
 ![Java 16](https://img.shields.io/badge/language-Java%2016-9B599A.svg?style=flat-square) <!-- modrinth_exclude.end -->
 [![GitHub license](https://img.shields.io/github/license/LambdAurora/LambDynamicLights?style=flat-square)](https://raw.githubusercontent.com/LambdAurora/LambDynamicLights/master/LICENSE)
@@ -6,6 +6,8 @@
 ![Mod loader: Fabric](https://img.shields.io/badge/modloader-fabric-blue?style=flat-square)
 
 This mod is complementary to other mods. It simplifies complex mod settings to make them as Vanilla-like as possible. 
+
+As of now, the compatible mods are: LambDynamicLights and LambdaBetterGrass
 
 ## Usage
 
