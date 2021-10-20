@@ -23,7 +23,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class VideoOptionsScreenMixinBetterGrass extends GameOptionsScreen {
 	@Unique
 	private Option bettergrass$option;
-	private Option dynamiclights$option;
 
 	public VideoOptionsScreenMixinBetterGrass(Screen parent, GameOptions gameOptions, Text title) {
 		super(parent, gameOptions, title);
@@ -32,7 +31,6 @@ public class VideoOptionsScreenMixinBetterGrass extends GameOptionsScreen {
 	@Inject(method = "<init>", at = @At("TAIL"))
 	private void onConstruct(Screen parent, GameOptions gameOptions, CallbackInfo ci) {
 		this.bettergrass$option = new BetterGrassOption(LambdaBetterGrass.get().config, this);
-		this.dynamiclights$option = new DynamicLightsOption(LambDynLights.get().config, this);
 	}
 
 	@ModifyArg(

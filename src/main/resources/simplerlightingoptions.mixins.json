@@ -4,10 +4,8 @@
   "package": "com.mango.simplerlightingoptions.mixin",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
-    "DynamicLightsMixin",
-    "VideoOptionsScreenMixinBetterGrass",
-    "VideoOptionsScreenMixinDynamicLights",
-    "VideoOptionsScreenRemoveLDLLBG"
+    "VideoOptionsScreenRemoveLDLLBG",
+    "VideoOptionsScreenMixinBetterGrass"
   ],
   "injectors": {
     "defaultRequire": 1
