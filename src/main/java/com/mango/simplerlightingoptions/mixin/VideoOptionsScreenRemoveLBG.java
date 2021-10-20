@@ -3,6 +3,7 @@ package com.mango.simplerlightingoptions.mixin;
 import com.mango.simplerlightingoptions.BetterGrassOption;
 import com.mango.simplerlightingoptions.DynamicLightsOption;
 import dev.lambdaurora.lambdabettergrass.LambdaBetterGrass;
+import dev.lambdaurora.lambdabettergrass.gui.LBGOption;
 import dev.lambdaurora.lambdynlights.LambDynLights;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.option.GameOptionsScreen;
@@ -16,17 +17,13 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
+import java.util.Arrays;
+
 @Mixin(VideoOptionsScreen.class)
 public class VideoOptionsScreenRemoveLBG extends GameOptionsScreen {
-    private Option bettergrass$option;
 
     public VideoOptionsScreenRemoveLBG(Screen parent, GameOptions gameOptions, Text title) {
         super(parent, gameOptions, title);
-    }
-
-    @Inject(method = "<init>", at = @At("TAIL"))
-    private void onConstruct(Screen parent, GameOptions gameOptions, CallbackInfo ci) {
-        this.bettergrass$option = new DynamicLightsOption(LambDynLights.get().config, this);
     }
 
     @ModifyArg(

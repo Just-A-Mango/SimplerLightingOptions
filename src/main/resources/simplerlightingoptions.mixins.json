@@ -5,7 +5,7 @@
   "compatibilityLevel": "JAVA_16",
   "mixins": [
     "VideoOptionsScreenRemoveLDLLBG",
-    "VideoOptionsScreenMixinBetterGrass"
+    "VideoOptionsScreenRemoveLBG"
   ],
   "injectors": {
     "defaultRequire": 1
