@@ -44,8 +44,8 @@ public class ChangeLDLButton extends GameOptionsScreen {
     private Option[] addOptionButton(Option[] old) {
         Option[] options = new Option[old.length];
         System.arraycopy(old, 0, options, 0, old.length);
-        options[options.length - 1] = this.lambdynlights$option;
-        options[options.length - 2] = this.bettergrass$option;
+        options[options.length - 2] = this.lambdynlights$option;
+        options[options.length - 1] = this.bettergrass$option;
         return options;
     }
 }
