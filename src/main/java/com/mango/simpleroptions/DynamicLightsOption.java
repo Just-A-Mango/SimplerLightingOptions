@@ -31,14 +31,14 @@ public class DynamicLightsOption extends Option {
         this.config.load();
         if (this.config.getDynamicLightsMode() == DynamicLightsMode.FANCY) {
             this.graphid = 2;
-            this.text = new TranslatableText("simplerlightingoptions.dynamiclights.fancy").formatted(Formatting.ITALIC);
+            this.text = new TranslatableText("simpleroptions.dynamiclights.fancy").formatted(Formatting.ITALIC);
 
         } else if (this.config.getDynamicLightsMode() == DynamicLightsMode.FAST) {
             this.graphid = 1;
-            this.text = new TranslatableText("simplerlightingoptions.dynamiclights.fast");
+            this.text = new TranslatableText("simpleroptions.dynamiclights.fast");
         } else if (this.config.getDynamicLightsMode() == DynamicLightsMode.OFF) {
             this.graphid = 0;
-            this.text = new TranslatableText("simplerlightingoptions.dynamiclights.off");
+            this.text = new TranslatableText("simpleroptions.dynamiclights.off");
         }
     }
 
@@ -53,7 +53,7 @@ public class DynamicLightsOption extends Option {
             this.config.setWaterSensitiveCheck(false);
             this.config.setEntitiesLightSource(false);
             this.config.save();
-            this.text = new TranslatableText("simplerlightingoptions.dynamiclights.off");
+            this.text = new TranslatableText("simpleroptions.dynamiclights.off");
             MinecraftClient.getInstance().reloadResources();
 //            MinecraftClient.getInstance().setScreen(new SettingsScreen(this.parent));
         } else {
@@ -66,7 +66,7 @@ public class DynamicLightsOption extends Option {
                 this.config.setWaterSensitiveCheck(false);
                 this.config.setEntitiesLightSource(false);
                 this.config.save();
-                this.text = new TranslatableText("simplerlightingoptions.dynamiclights.fast");
+                this.text = new TranslatableText("simpleroptions.dynamiclights.fast");
                 MinecraftClient.getInstance().reloadResources();
 //                MinecraftClient.getInstance().setScreen(new SettingsScreen(this.parent));
 
@@ -78,7 +78,7 @@ public class DynamicLightsOption extends Option {
                 this.config.setWaterSensitiveCheck(true);
                 this.config.setEntitiesLightSource(true);
                 this.config.save();
-                this.text = new TranslatableText("simplerlightingoptions.dynamiclights.fancy").formatted(Formatting.ITALIC);
+                this.text = new TranslatableText("simpleroptions.dynamiclights.fancy").formatted(Formatting.ITALIC);
                 MinecraftClient.getInstance().reloadResources();
 //                MinecraftClient.getInstance().setScreen(new SettingsScreen(this.parent));
 

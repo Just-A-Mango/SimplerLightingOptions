@@ -30,14 +30,14 @@ public class BetterGrassOption extends Option {
         this.config.load();
         if (this.config.getMode() == LBGMode.FANCY) {
             this.graphid = 2;
-            this.text = new TranslatableText("simplerlightingoptions.bettergrass.fancy").formatted(Formatting.ITALIC);
+            this.text = new TranslatableText("simpleroptions.bettergrass.fancy").formatted(Formatting.ITALIC);
 
         } else if (this.config.getMode() == LBGMode.FAST) {
             this.graphid = 1;
-            this.text = new TranslatableText("simplerlightingoptions.bettergrass.fast");
+            this.text = new TranslatableText("simpleroptions.bettergrass.fast");
         } else if (this.config.getMode() == LBGMode.OFF) {
             this.graphid = 0;
-            this.text = new TranslatableText("simplerlightingoptions.bettergrass.off");
+            this.text = new TranslatableText("simpleroptions.bettergrass.off");
         }
     }
 
@@ -47,7 +47,7 @@ public class BetterGrassOption extends Option {
             graphid = 0;
             this.config.setMode(LBGMode.OFF);
             this.config.setBetterLayer(false);
-            this.text = new TranslatableText("simplerlightingoptions.bettergrass.off");
+            this.text = new TranslatableText("simpleroptions.bettergrass.off");
             MinecraftClient.getInstance().reloadResources();
 //            MinecraftClient.getInstance().setScreen(new SettingsScreen(this.parent));
         } else {
@@ -55,14 +55,14 @@ public class BetterGrassOption extends Option {
             if (graphid == 1) {
                 this.config.setMode(LBGMode.FASTEST);
                 this.config.setBetterLayer(false);
-                this.text = new TranslatableText("simplerlightingoptions.bettergrass.fast");
+                this.text = new TranslatableText("simpleroptions.bettergrass.fast");
                 MinecraftClient.getInstance().reloadResources();
 //                MinecraftClient.getInstance().setScreen(new SettingsScreen(this.parent));
 
             } else if (graphid == 2) {
                 this.config.setMode(LBGMode.FANCY);
                 this.config.setBetterLayer(true);
-                this.text = new TranslatableText("simplerlightingoptions.bettergrass.fancy").formatted(Formatting.ITALIC);
+                this.text = new TranslatableText("simpleroptions.bettergrass.fancy").formatted(Formatting.ITALIC);
                 MinecraftClient.getInstance().reloadResources();
 //                MinecraftClient.getInstance().setScreen(new SettingsScreen(this.parent));
 

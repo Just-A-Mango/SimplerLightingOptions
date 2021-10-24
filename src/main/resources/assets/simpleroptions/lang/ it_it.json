@@ -1,8 +1,8 @@
 {
-  "simplerlightingoptions.dynamiclights.off": "Luci dinamiche: Disabile",
-  "simplerlightingoptions.dynamiclights.fast": "Luci dinamiche: Veloce",
-  "simplerlightingoptions.dynamiclights.fancy": "Luci dinamiche: Bellissimo",
-  "simplerlightingoptions.bettergrass.off": "Erba migliore: Disabile",
-  "simplerlightingoptions.bettergrass.fast": "Erba migliore: Veloce",
-  "simplerlightingoptions.bettergrass.fancy": "Erba migliore: Bellissimo"
+  "simpleroptions.dynamiclights.off": "Luci dinamiche: Disabile",
+  "simpleroptions.dynamiclights.fast": "Luci dinamiche: Veloce",
+  "simpleroptions.dynamiclights.fancy": "Luci dinamiche: Bellissimo",
+  "simpleroptions.bettergrass.off": "Erba migliore: Disabile",
+  "simpleroptions.bettergrass.fast": "Erba migliore: Veloce",
+  "simpleroptions.bettergrass.fancy": "Erba migliore: Bellissimo"
 }

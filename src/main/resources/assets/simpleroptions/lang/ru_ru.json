@@ -1,8 +1,8 @@
 {
-  "simplerlightingoptions.dynamiclights.off": "Динамическое освещение: Выкл",
-  "simplerlightingoptions.dynamiclights.fast": "Динамическое освещение: Быстро",
-  "simplerlightingoptions.dynamiclights.fancy": "Динамическое освещение: Детально",
-  "simplerlightingoptions.bettergrass.off": "Лучшая трава: выключено",
-  "simplerlightingoptions.bettergrass.fast": "Лучшая трава: быстрая",
-  "simplerlightingoptions.bettergrass.fancy": "Лучшая трава: подробные"
+  "simpleroptions.dynamiclights.off": "Динамическое освещение: Выкл",
+  "simpleroptions.dynamiclights.fast": "Динамическое освещение: Быстро",
+  "simpleroptions.dynamiclights.fancy": "Динамическое освещение: Детально",
+  "simpleroptions.bettergrass.off": "Лучшая трава: выключено",
+  "simpleroptions.bettergrass.fast": "Лучшая трава: быстрая",
+  "simpleroptions.bettergrass.fancy": "Лучшая трава: подробные"
 }

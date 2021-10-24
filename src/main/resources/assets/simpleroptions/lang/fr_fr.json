@@ -1,8 +1,8 @@
 {
-  "simplerlightingoptions.dynamiclights.off": "Lumières dynamiques: Désactivé",
-  "simplerlightingoptions.dynamiclights.fast": "Lumières dynamiques: Rapides",
-  "simplerlightingoptions.dynamiclights.fancy": "Lumières dynamiques: Belles",
-  "simplerlightingoptions.bettergrass.off": "Meilleure herbe: Désactivé",
-  "simplerlightingoptions.bettergrass.fast": "Meilleure herbe: Rapide",
-  "simplerlightingoptions.bettergrass.fancy": "Meilleure herbe: Détaillé"
+  "simpleroptions.dynamiclights.off": "Lumières dynamiques: Désactivé",
+  "simpleroptions.dynamiclights.fast": "Lumières dynamiques: Rapides",
+  "simpleroptions.dynamiclights.fancy": "Lumières dynamiques: Belles",
+  "simpleroptions.bettergrass.off": "Meilleure herbe: Désactivé",
+  "simpleroptions.bettergrass.fast": "Meilleure herbe: Rapide",
+  "simpleroptions.bettergrass.fancy": "Meilleure herbe: Détaillé"
 }
