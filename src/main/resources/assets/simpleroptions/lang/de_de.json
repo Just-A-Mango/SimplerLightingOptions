@@ -1,5 +1,8 @@
 {
   "simplerlightingoptions.dynamiclights.off": "Dynamische Lichter: Aus",
   "simplerlightingoptions.dynamiclights.fast": "Dynamische Lichter: Schnell",
-  "simplerlightingoptions.dynamiclights.fancy": "Dynamische Lichter: Schön"
+  "simplerlightingoptions.dynamiclights.fancy": "Dynamische Lichter: Schön",
+  "simplerlightingoptions.bettergrass.off": "Besseres Gras: Aus",
+  "simplerlightingoptions.bettergrass.fast": "Besseres Gras: Schnell",
+  "simplerlightingoptions.bettergrass.fancy": "Besseres Gras: Schön"
 }
