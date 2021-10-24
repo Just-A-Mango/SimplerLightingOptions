@@ -1,34 +1,36 @@
-package com.mango.simpleroptions.mixin;
+package com.mango.simpleroptions.lambdaurora.mixin;
 
+
+import com.mango.simpleroptions.BetterGrassOption;
 import com.mango.simpleroptions.DynamicLightsOption;
+import dev.lambdaurora.lambdabettergrass.LambdaBetterGrass;
 import dev.lambdaurora.lambdynlights.LambDynLights;
-import dev.lambdaurora.spruceui.Tooltip;
+import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.option.GameOptionsScreen;
 import net.minecraft.client.gui.screen.option.VideoOptionsScreen;
 import net.minecraft.client.option.GameOptions;
 import net.minecraft.client.option.Option;
-import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.text.Text;
-import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Unique;
+import org.spongepowered.asm.mixin.*;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-@Mixin(VideoOptionsScreen.class)
-public class VideoOptionsScreenMixinDynamicLights extends GameOptionsScreen {
-    @Unique
-    private Option dynamiclights$option;
+@Mixin(value = VideoOptionsScreen.class, priority = 1001)
+public class ChangeLDLButton extends GameOptionsScreen {
+    private DynamicLightsOption lambdynlights$option;
+    private BetterGrassOption bettergrass$option;
 
-    public VideoOptionsScreenMixinDynamicLights(Screen parent, GameOptions gameOptions, Text title) {
+    public ChangeLDLButton(Screen parent, GameOptions gameOptions, Text title) {
         super(parent, gameOptions, title);
     }
 
     @Inject(method = "<init>", at = @At("TAIL"))
     private void onConstruct(Screen parent, GameOptions gameOptions, CallbackInfo ci) {
-        this.dynamiclights$option = new DynamicLightsOption(LambDynLights.get().config, this);
+        this.lambdynlights$option = new DynamicLightsOption(LambDynLights.get().config, MinecraftClient.getInstance().currentScreen);
+        this.bettergrass$option = new BetterGrassOption(LambdaBetterGrass.get().config, MinecraftClient.getInstance().currentScreen);
     }
 
     @ModifyArg(
@@ -40,14 +42,10 @@ public class VideoOptionsScreenMixinDynamicLights extends GameOptionsScreen {
             index = 0
     )
     private Option[] addOptionButton(Option[] old) {
-        Option[] options = new Option[old.length + 1];
+        Option[] options = new Option[old.length];
         System.arraycopy(old, 0, options, 0, old.length);
-        options[options.length - 1] = this.dynamiclights$option;
+        options[options.length - 1] = this.lambdynlights$option;
+        options[options.length - 2] = this.bettergrass$option;
         return options;
-    }
-
-    @Inject(method = "render", at = @At("TAIL"))
-    private void onRender(MatrixStack matrices, int mouseX, int mouseY, float delta, CallbackInfo ci) {
-        Tooltip.renderAll(this, matrices);
     }
 }

@@ -1,11 +1,10 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.mango.simpleroptions.mixin",
+  "package": "com.mango.simpleroptions.lambdaurora.mixin",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
-    "VideoOptionsScreenRemoveLDLLBG",
-    "VideoOptionsScreenRemoveLBG"
+    "ChangeLDLButton"
   ],
   "injectors": {
     "defaultRequire": 1

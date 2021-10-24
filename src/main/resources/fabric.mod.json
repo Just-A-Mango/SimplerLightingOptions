@@ -22,7 +22,7 @@
     ]
   },
   "mixins": [
-    "simpleroptions.mixins.json"
+    "simpleroptions.lambdaurora.mixins.json"
   ],
 
   "depends": {
