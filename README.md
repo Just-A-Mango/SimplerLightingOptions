@@ -3,6 +3,7 @@
 ![Java 16](https://img.shields.io/badge/language-Java%2016-9B599A.svg?style=flat-square) <!-- modrinth_exclude.end -->
 [![GitHub license](https://img.shields.io/github/license/LambdAurora/LambDynamicLights?style=flat-square)](https://raw.githubusercontent.com/Just-A-Mango/SimplerOptions/master/LICENSE)
 [![Modrinth: Download](https://img.shields.io/badge/Modrinth-Download!-brightgreen?style=flat-square)](https://modrinth.com/mod/simpleroptions)
+[![Curseforge Download](https://img.shields.io/badge/Curseforge-Download!-orange?style=flat-square)](https://www.curseforge.com/minecraft/mc-mods/simpler-options)
 ![Environment: Client](https://img.shields.io/badge/environment-client-1976d2?style=flat-square)
 ![Mod loader: Fabric](https://img.shields.io/badge/modloader-fabric-blue?style=flat-square)
 
