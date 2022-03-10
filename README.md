@@ -1,4 +1,4 @@
-# Simpler Options
+# Simpler Options (not actively worked on)
 
 ![Java 16](https://img.shields.io/badge/language-Java%2016-9B599A.svg?style=flat-square) <!-- modrinth_exclude.end -->
 [![GitHub license](https://img.shields.io/github/license/LambdAurora/LambDynamicLights?style=flat-square)](https://raw.githubusercontent.com/Just-A-Mango/SimplerOptions/master/LICENSE)
